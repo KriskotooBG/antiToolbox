@@ -1,0 +1,7 @@
+name: AntiToolbox
+main: kriskotooBG\AntiToolbox\Main
+version: 1.2.1
+api: 3.0.0
+author: kriskotooBG
+load: POSTWORLD
+description: "Kicks players that have logged in using a cheat client like Toolbox or some others."
