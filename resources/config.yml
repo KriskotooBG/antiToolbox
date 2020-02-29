@@ -1,0 +1,30 @@
+---
+#====================================================================
+#                 _   _ _______          _ _               
+#     /\         | | (_)__   __|        | | |              
+#    /  \   _ __ | |_ _   | | ___   ___ | | |__   _____  __
+#   / /\ \ | '_ \| __| |  | |/ _ \ / _ \| | '_ \ / _ \ \/ /
+#  / ____ \| | | | |_| |  | | (_) | (_) | | |_) | (_) >  < 
+# /_/    \_\_| |_|\__|_|  |_|\___/ \___/|_|_.__/ \___/_/\_\
+#                                                          
+#                                                          
+#
+#  AntiToolbox Main configuration file.
+#
+#
+# This software is distributed under the "Apache" license.
+# This license allows you to use it and/or modify it but you are not at
+# all allowed to sell this plugin at any cost. If found doing so the
+# necessary action required would be taken.
+#
+#====================================================================
+
+#DO NOT EDIT
+confVer: 1.0
+
+#======================== MAIN CONFIGURATION ========================
+
+kickMessage: "Please only use the vanilla version of this game."
+
+#====================================================================
+...
