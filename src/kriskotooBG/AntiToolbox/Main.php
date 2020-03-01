@@ -4,9 +4,12 @@
 	
 	use pocketmine\plugin\PluginBase;
 	use pocketmine\utils\TextFormat as TF;
+	use pocketmine\event\Listener;
+	use pocketmine\event\server\DataPacketReceiveEvent;
+	use pocketmine\network\mcpe\protocol\LoginPacket;
+
 	
-	
-	class Main extends PluginBase{
+	class Main extends PluginBase implements Listener{
 		
 		public function onEnable(){
 			$this->getLogger()->info(TF::GOLD . "---------- AntiToolbox -----------");
@@ -29,6 +32,14 @@
 		
 		
 		
-		
-	
+		public function onReceive(DataPacketReceiveEvent $evnt){
+			if ($evnt->getPacket() instanceof LoginPacket){
+				if ($evnt->getPacket()->clientId === 0){
+					
+					$evnt->setCancelled(true);
+					$evnt->getPlayer()->close('', $this->cm->get("kickMessage", false));
+				}
+			}
+		}
+	}
 ?>
