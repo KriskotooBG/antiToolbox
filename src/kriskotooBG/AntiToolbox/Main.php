@@ -1,5 +1,5 @@
 <?php
-	namespace "kriskotooBG\AntiToolbox"
+	namespace kriskotooBG\AntiToolbox;
 	
 	
 	use pocketmine\plugin\PluginBase;
